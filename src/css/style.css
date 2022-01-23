@@ -1,0 +1,76 @@
+
+.image-switch .panel-container{
+    position: relative;
+}
+
+.image-switch .left-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.image-switch .right-panel{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-switch .inner-right-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.image-switch .fixed-container {
+    /* position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
+    position: absolute; 
+    /* left: 0;  */
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    /* width: 400px; */
+    
+   
+
+  }
+
+  .image-switch .drag {
+    position: absolute;
+    width: 0;
+    height: 100%;
+}
+
+.image-switch .drag .arrow-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+    background-color: white;
+}
+.image-switch .drag .arrow-btn:hover {
+    cursor: pointer;
+}
+
+.image-switch img.image, .image-switch .drag .arrow-btn{
+    user-select: none;
+}
